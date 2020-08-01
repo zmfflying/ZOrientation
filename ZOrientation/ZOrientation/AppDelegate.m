@@ -27,8 +27,8 @@
 
 -(UIInterfaceOrientationMask)application:(UIApplication *)application supportedInterfaceOrientationsForWindow:(UIWindow *)window{
     if (self.isForceLandscape) {
-
-        return UIInterfaceOrientationMaskLandscape;
+        //这里设置允许的横屏类型
+        return UIInterfaceOrientationMaskLandscapeRight;
     }else if (self.isForcePortrait){
 
         return UIInterfaceOrientationMaskPortrait;
